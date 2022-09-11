@@ -15,20 +15,63 @@ To save time in this process, the IT team suggested an ML system that is capable
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision to validate it (them).
+* The tree leaves that have pwdery mildew conatins white streaks on them.
+    -  conventional data analysis will be used to conduct a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
 
 
 ## Rationale to map the business requirements to the Data Visualizations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualizations and ML tasks.
+* **Business Requirement 1**: Data Visualization
+    In order to  visually differentiate healthy and mildew-infested cherry leaves:
+	* As a client I want to  display the "mean" and "standard deviation" images for cherry leaves that are healthy and cherry leaves that contain powdery mildew.
+ 	* As a client I want to display the differences between an average healthy cherry leaf and a cherry leaf that has powdery mildew.
+	* As a client I want to display an image montage for healthy cherry leaf and mildew-infested leaf.
+
+* **Business Requirement 2**:  Classification
+	* As a client I want to predict if a given cherry leaf is healthy or contains powdery mildew so that I do not supply the market with a product of compromised quality. 
+	* As a client I want to build a binary classifier and generate reports.
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualized a ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+* As a client I want a ML model to predict if the cherry leaf tree is healthy or has powdery mildew.
+* The ideal outcome is provide Farmy & Foods with a faster and reliable mildew detection mechanism that is readily scalable across the multiple farms in the country
+* The model success metric are:
+    * A study showing how to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
+    * The capability to predict if a cherry leaf is healthy or contains powdery mildew.
+    * The model accuracy on test data is 97%
 
 
-## Dashboard Design
-* List all dashboard pages and its content, either block of information or widgets, like: buttons, checkbox, image, or any other item that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a give feature (for example, in the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type).
+## Dashboard Design (Streamlit App User Interface)
+
+### Page 1: Quick Project Summary
+* A project summary page, showing the project dataset summary and the client's requirements.
+* Quick project summary
+	* General Information
+		* 
+
+	* Project Dataset
+		* The dataset contains +4 thousand images taken from client's crop fields. The images show cherry leaves that are healthy and cherry leaves that contain powdery mildew, which is a fungal disease that affects a wide range of plants. The cherry plantation crop is one of their finest products in the portfolio and the company is concerned about supplying the market with a product of compromised quality.
+
+	* Business requirements
+		*  The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
+		*  The client is interested in predicting if a cherry tree is healthy or contains powdery mildew.
+
+### Page 2: Cherry leaf visualizer
+* It will answer business requirement 1
+	* Checkbox 1 - Difference between average and variability image
+	* Checkbox 2 - Differences between average parasitized and average uninfected cells
+	* Checkbox 3 - Image Montage
+
+### Page 3: Mildew detector
+* It will answer business requirement 1
+	* Checkbox 1 - Difference between average and variability image
+	* Checkbox 2 - Differences between average parasitized and average uninfected cells
+	* Checkbox 3 - Image Montage
+
+### Page 4: ML performance metrics
+* A technical page displaying the model performance
+	* Checkbox 1 - Difference between average and variability image
+	* Checkbox 2 - Differences between average parasitized and average uninfected cells
+	* Checkbox 3 - Image Montage
 
 
 ## Unfixed Bugs
