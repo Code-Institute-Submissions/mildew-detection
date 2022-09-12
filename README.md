@@ -46,8 +46,6 @@ To save time in this process, the IT team suggested an ML system that is capable
 * A project summary page, showing the project dataset summary and the client's requirements.
 * Quick project summary
 	* General Information
-		* 
-
 	* Project Dataset
 		* The dataset contains +4 thousand images taken from client's crop fields. The images show cherry leaves that are healthy and cherry leaves that contain powdery mildew, which is a fungal disease that affects a wide range of plants. The cherry plantation crop is one of their finest products in the portfolio and the company is concerned about supplying the market with a product of compromised quality.
 
@@ -57,21 +55,22 @@ To save time in this process, the IT team suggested an ML system that is capable
 
 ### Page 2: Cherry leaf visualizer
 * It will answer business requirement 1
+	* Lists the findings related to the study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
 	* Checkbox 1 - Difference between average and variability image
-	* Checkbox 2 - Differences between average parasitized and average uninfected cells
+	* Checkbox 2 - Differences between Healthy and Powdery Mildew Cherry Leaves
 	* Checkbox 3 - Image Montage
 
 ### Page 3: Mildew detector
-* It will answer business requirement 1
-	* Checkbox 1 - Difference between average and variability image
-	* Checkbox 2 - Differences between average parasitized and average uninfected cells
-	* Checkbox 3 - Image Montage
-
+* It will answer business requirement 2
+	* file upload widget to upload one or more images for prediction
+	* Display image and prediction statement indicating whether or not a cherry leaf conatins mildew
+	* Display table with image and prediction result
+	* Download button to download table
+	
 ### Page 4: ML performance metrics
 * A technical page displaying the model performance
-	* Checkbox 1 - Difference between average and variability image
-	* Checkbox 2 - Differences between average parasitized and average uninfected cells
-	* Checkbox 3 - Image Montage
+	* Display project hypothesis and validation
+	* Display project performance
 
 
 ## Unfixed Bugs
