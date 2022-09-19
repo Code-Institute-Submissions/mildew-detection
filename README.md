@@ -1,5 +1,5 @@
 ## Dataset Content
-* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We created then a fictitious user story where predictive analytics can be applied in a real project in the workplace.
+* The dataset is sourced from Kaggle
 * The dataset contains +4 thousand images taken from client's crop fields. The images show cherry leaves that are healthy and cherry leaves that contain powdery mildew, which is a fungal disease that affects a wide range of plants. The cherry plantation crop is one of their finest products in the portfolio and the company is concerned about supplying the market with a product of compromised quality.
 
 
@@ -62,15 +62,17 @@ To save time in this process, the IT team suggested an ML system that is capable
 
 ### Page 3: Mildew detector
 * It will answer business requirement 2
+	* Link to download a set of cherry leaf images for live prediction
 	* file upload widget to upload one or more images for prediction
 	* Display image and prediction statement indicating whether or not a cherry leaf conatins mildew
-	* Display table with image and prediction result
+	* Display table with image name and prediction result
 	* Download button to download table
-	
-### Page 4: ML performance metrics
+
+### Page 4: Project Hypothesis and Validation
+* Display each project hypothesis and validation
+
+### Page 5: ML performance metrics
 * A technical page displaying the model performance
-	* Display project hypothesis and validation
-	* Display project performance
 
 
 ## Unfixed Bugs
@@ -89,9 +91,16 @@ To save time in this process, the IT team suggested an ML system that is capable
 5. The deployment process should happen smoothly in case all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
 
 
-## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide example(s) on how you used these libraries.
+## Technologies Used
 
+### Main Data Analysis and Machine Learning Libraries
+* [TensorFlow](https://www.tensorflow.org/overview) - used during image preprocessing to filter out corrupt images. 
+* [Keras](https://keras.io/)
+
+### OtherFrameworks, Libraries & Programs Used
+* [Git](https://git-scm.com/) - used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+* [GitHub:](https://github.com/) - used to store the projects code after being pushed from Git.
+* [Balsamiq:](https://balsamiq.com/) - Balsamiq was used to create the Dashboard [wireframes](https://github.com/) during the design process.
 
 ## Credits 
 
