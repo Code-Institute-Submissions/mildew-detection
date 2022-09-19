@@ -96,6 +96,7 @@ To save time in this process, the IT team suggested an ML system that is capable
 ### Main Data Analysis and Machine Learning Libraries
 * [TensorFlow](https://www.tensorflow.org/overview) - used during image preprocessing to filter out corrupt images. 
 * [Keras](https://keras.io/)
+* [joblib](https://pypi.org/project/joblib/) for saving and loading image shape
 
 ### OtherFrameworks, Libraries & Programs Used
 * [Git](https://git-scm.com/) - used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
