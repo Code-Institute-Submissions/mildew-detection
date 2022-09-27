@@ -42,6 +42,7 @@ To save time in this process, the IT team suggested an ML system that is capable
 
 ## Dashboard Design (Streamlit App User Interface)
 
+### [Dashboard Wireframe](docs/project_wireframe.pdf)
 ### Page 1: Quick Project Summary
 * A project summary page, showing the project dataset summary and the client's requirements.
 * Quick project summary
@@ -81,11 +82,16 @@ To save time in this process, the IT team suggested an ML system that is capable
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* The project was deployed to Heroku using the following steps.
+* The App live link is:  https://pp5-mildew-detection.herokuapp.com/
+* The project was deployed to Heroku using the steps outlined.
 
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
+1. create a Heroku app via the Heroku CLI
+	- download and install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+	- Log in to Heroku and create an App using Heroku build-pack 20
+		`heroku apps:create pp5-mildew-detection --stack heroku-20`
+	This was created using stack-20 because the current default stack heroku-22 doesn't support python version 3.8.13
+2. Sign in to check that it was created successfullty
+3. At the Deploy tab, select GitHub as the deployment method.
 3. Select your repository name and click Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
 5. The deployment process should happen smoothly in case all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
