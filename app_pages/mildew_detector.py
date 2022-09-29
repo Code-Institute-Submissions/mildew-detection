@@ -8,7 +8,7 @@ from src.machine_learning.predictive_analysis import (
     resize_input_image,
     plot_prediction_probabilities
 )
-
+from src.data_management import download_dataframe_as_csv
 
 def page_mildew_detection_page():
     st.write('### Objective')
@@ -53,3 +53,4 @@ def upload_and_predict(images_buffer):
         if not report.empty:
             st.success("Analysis Report")
             st.table(report)
+            st.markdown(download_dataframe_as_csv(report), unsafe_allow_html=True)            
