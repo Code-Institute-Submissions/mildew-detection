@@ -64,11 +64,13 @@ The classification dataset included 4208 records (2104 healthy leaves and 2104 i
 
 
 ## Data Preparation
-Minimal data cleaning was required, the folders were scanned through to delete any non-image file. To adequately perform model training and avoid model overfitting the dataset was split into train, test and validation set. The split ratio of the dataset was 0.7, 0.2, and 0.1 repspectively. Data augmentation was performed on the dataset using ImageDataGenerator
-
+Minimal data cleaning was required, the folders were scanned through to delete any non-image file. To adequately perform model training and avoid model overfitting the dataset was split into train, test and validation set. The split ratio of the dataset was 0.7, 0.2, and 0.1 repspectively.
+Data augmentation was performed using ImageDataGenerator on the training dataset to increase the image data by artificially and temporarily creating training images through the combination of different processes, such as random rotation, shifts, sheared, zoom and rotated images in the computer's short-term memory (RAM). ImageDataGenertor was also used to rescale the test dataset and validation dataset.
 
 ## Modeling
-A classification model was created The training dataset was used to train the model and validated using the validation dataset. The model created was used to make prediction on the unseen test dataset and the Accuracy performance metrics calculated.
+The sequential model is used on the training dataset was used to train the model and validated using the validation dataset. 
+
+The model created was used to make prediction on the unseen test dataset and the Accuracy performance metrics calculated.
 
 
 ## Evaluation
@@ -124,7 +126,7 @@ Dashboard wireframe was created using balsamiq. The wireframe is in pdf format a
 ## **Features**
 The application is designed using streamlit library. It is has a sidebar menu with five navigation links.
 
-**Navigation** The dashboard developed is a multipage streamlit application with sidebar navigation links. The navigation links provides quick access to the five pages listed:
+**Navigation** The dashboard developed is a multipage streamlit application with sidebar navigation checkbox links. The navigation links provides quick access to the five pages listed:
 
 - **Page 1: Quick Project Summary**
 This page displays a brief overview of the project requirements and the dataset
@@ -161,10 +163,6 @@ Technical information about the model and data are displayed on this page. It sh
 ![](docs/images/page_5_metrics.png)
 
 ---
-
-## Hypothesis Validation
-I have used a combination of manual and automated testing to ensure the website's functionality meets the desired intent.
-
 
 
 ## Bugs and Fixes
