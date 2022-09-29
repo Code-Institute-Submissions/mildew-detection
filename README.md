@@ -235,6 +235,7 @@ Steps take to create the app is as follows:
 * [plotly](https://plotly.com/) - used for ploting charts for data visualization
 * [streamlit](https://streamlit.io/) For the dashboard development
 * [scikit-learn](https://scikit-learn.org/stable/) - used for data processing
+* [jupyter notebook](https://jupyter.org) - used for writing and running the ML pipelines 
 
 
 ### OtherFrameworks, Libraries & Programs Used
